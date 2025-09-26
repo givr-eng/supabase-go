@@ -44,7 +44,6 @@ type ClientOptions struct {
 // key is the Supabase API key.
 // options is the Supabase client options.
 func NewClient(url, key string, options *ClientOptions) (*Client, error) {
-
 	if url == "" || key == "" {
 		return nil, errors.New("url and key are required")
 	}
@@ -160,5 +159,4 @@ func (c *Client) UpdateAuthSession(session types.Session) {
 	c.options.headers["Authorization"] = "Bearer " + session.AccessToken
 	c.Storage = storage_go.NewClient(c.options.url+STORAGE_URL, session.AccessToken, c.options.headers)
 	c.Functions = functions.NewClient(c.options.url+FUNCTIONS_URL, session.AccessToken, c.options.headers)
-
 }

@@ -9,8 +9,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/givr-eng/supabase-go"
 	"github.com/joho/godotenv"
-	"github.com/supabase-community/supabase-go"
 )
 
 func main() {

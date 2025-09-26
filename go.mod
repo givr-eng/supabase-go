@@ -1,4 +1,4 @@
-module github.com/supabase-community/supabase-go
+module github.com/givr-eng/supabase-go
 
 go 1.21.1
 

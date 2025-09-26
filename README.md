@@ -1,3 +1,5 @@
+# Supabase Go Client
+
 An isomorphic Go client for Supabase.
 
 ## Features
@@ -28,7 +30,7 @@ _Reminder: `supabase-go` has some APIs that require the `service_key` rather tha
 Install the library to your go project:
 
 ```sh
-  go get github.com/supabase-community/supabase-go
+go get github.com/givr-eng/supabase-go
 ```
 
 ### Quick start
